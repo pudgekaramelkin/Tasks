@@ -1,0 +1,73 @@
+.main {
+  min-block-size: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(238, 238, 238);
+  font-size: clamp(0.75rem, 0.6462rem + 0.5031vw, 1.25rem);
+}
+
+.account-container {
+  border: 2px solid black;
+  border-radius: 12px;
+  margin: 0 45px;
+  padding: 20px;
+}
+
+.link {
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.link:hover {
+  color: rgb(63, 63, 247);
+}
+
+.title {
+  font-size: clamp(1.125rem, 0.5802rem + 2.6415vw, 3.75rem);
+}
+
+.account-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4rem;
+}
+
+.account-container__avatar {
+  inline-size: 350px;
+  block-size: 350px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+}
+
+.account-container__right {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.account-container__contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+@media (max-width: 650px) {
+  .account-container__avatar {
+    inline-size: 250px;
+    block-size: 250px;
+  }
+  .account-container {
+    flex-direction: column;
+  }
+
+  .link {
+    color: rgb(63, 63, 247);
+  }
+}

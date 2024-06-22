@@ -1,0 +1,48 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  inline-size: 100vw;
+  min-block-size: 100svh;
+  margin: 0;
+  font-family: 'Georgia', sans-serif;
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+}
+
+button,
+input {
+  color: currentColor;
+  font-family: inherit;
+  font-size: inherit;
+  padding: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+.title {
+  font-weight: 600;
+}

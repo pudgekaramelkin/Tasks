@@ -1,0 +1,35 @@
+.page {
+  min-block-size: 100vh;
+  inline-size: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: beige;
+}
+
+#users {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.user {
+  padding: 10px;
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+  border: 1px solid black;
+}
+
+.title {
+  margin-block-end: 20px;
+}
+
+.user-details__title {
+  margin: 15px 0;
+}
+
+#details {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
